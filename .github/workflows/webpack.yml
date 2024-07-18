@@ -1,0 +1,28 @@
+名称：名称：NodeJS 与 Webpack
+
+
+  推：
+: [    分支：[ “master” ] “master”      ]
+  答案：
+    分支: [    分支：[ “master” ] “master”     ]
+
+工作：
+  建造：
+    running-on     :     运行于：ubuntu-latest
+
+    战略：
+      框架：
+        node-version      : [        节点版本：[ 14.x , 16.x , 18.x ]       , 16.x , 18.x ]
+
+    脚步：
+    -使用:             - 使用：actions/checkout@v4
+
+    -姓名      :           - 名称：使用 Node.js $ {     { Matrix.node-version }    }   {  { matrix.node-version } }
+      用途：       用途：actions/setup-node@v3
+      和：
+        节点版本：$ {   {矩阵.节点版本}  }
+
+    -姓名：Build
+      运行：|
+        npm 安装
+        npx webpack
